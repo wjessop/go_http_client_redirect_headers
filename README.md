@@ -48,7 +48,7 @@ Now we make another request, this time we specify a redirect policy function to 
     * Client handling redirect
     * Previous requests: 1
     * 	1: GET http://localhost:8080/start
-    * Copying headers redirect
+    * Copying headers
     * Following redirect
     Server got request: GET /redirectdestination
     Headers:
