@@ -4,6 +4,8 @@ It seems the Go net/http client silently follows 30x redirects, but drops header
 
 The program makes starts up a Go server that has two handlers. The first redirects to the second. Both dump out the headers they have received. the program then makes two requests to the server. The first is a "vanilla" request that doesn't specify a redirect handler. The second makes a request, but this time specifies a redirect handler that copies the header values between requests.
 
+There's been some [discussion on this previously](http://grokbase.com/t/gg/golang-nuts/136syegzsc/go-nuts-net-http-redirection-and-headers) but no resolution, wether this is correct or incorrect behaviour that I can find.
+
 ## The output
 
 You can generate this output yourself by running:
